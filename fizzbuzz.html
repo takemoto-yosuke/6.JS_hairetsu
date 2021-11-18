@@ -19,6 +19,24 @@
   <script>
     // まずはconsoleに表示してみよう！
 
+    let num = "";
+
+    for (let i = 1; i < 101; i++) {
+      if (i % 15 == 0) {
+        num += "<p>" + "FizzBuzz" + "</p>";
+      }
+      else if (i % 3 == 0) {
+        num += "<p>" + "Fizz" + "</p>";
+      }
+      else if (i % 5 == 0) {
+        num += "<p>" + "Buzz" + "</p>";
+      }
+      else {
+        num += "<p>" + i + "</p>";
+      }
+    }
+
+    $("#result").html(num);
   </script>
 
 </body>
